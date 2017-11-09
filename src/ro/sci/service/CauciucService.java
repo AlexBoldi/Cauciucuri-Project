@@ -35,7 +35,9 @@ public class CauciucService {
         c3.type = "All seasons";
         Cauciuc c4 = new Cauciuc("Continental");
         c4.type = "Summer";
-        cauciucuri = new Cauciuc[] {c1, c2, c3, c4};
+        Cauciuc c5 = new Cauciuc("Goodyear");
+        c4.type = "Winter";
+        cauciucuri = new Cauciuc[] {c1, c2, c3, c4, c5};
 
     }
 
