@@ -26,7 +26,7 @@ public class Main {
 
         CauciucController cauciucController = new CauciucController();
 
-        SearchCauciucRequest searchCauciucRequest = new SearchCauciucRequest("", "");
+        SearchCauciucRequest searchCauciucRequest = new SearchCauciucRequest("Continental", "Summer");
         // Atat producatorul cat si tipul de cauciuc trebuie sa se potriveasca pentru a fi afisat un rezultat
 
         Cauciuc searchResult = cauciucController.handleSearchCauciucRequest(searchCauciucRequest);
