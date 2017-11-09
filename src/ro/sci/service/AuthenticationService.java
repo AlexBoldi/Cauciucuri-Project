@@ -23,6 +23,7 @@ public class AuthenticationService {
     }
 
     private boolean isPasswordMatching(String pass, User user) {
+
         return pass != null && pass.equals(user.psasword);
     }
 

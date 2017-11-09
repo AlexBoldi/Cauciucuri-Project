@@ -18,7 +18,7 @@ public class Main {
         User result = loginController.handleLoginRequest(loginRequest);
 
         if (result != null) {
-            System.out.println("autentificare cu succes");
+            System.out.println("Autentificare cu succes");
         }else {
             System.out.println("mai incearca " + loginRequest.loginName);
 
@@ -26,15 +26,21 @@ public class Main {
 
         CauciucController cauciucController = new CauciucController();
 
-        SearchCauciucRequest searchCauciucRequest = new SearchCauciucRequest("Michellin", "Winter");
+        SearchCauciucRequest searchCauciucRequest = new SearchCauciucRequest("", "");
+        // Atat producatorul cat si tipul de cauciuc trebuie sa se potriveasca pentru a fi afisat un rezultat
 
-        Cauciuc finalSearch = cauciucController.handleSearchCauciucRequest(searchCauciucRequest);
+        Cauciuc searchResult = cauciucController.handleSearchCauciucRequest(searchCauciucRequest);
 
-        if (finalSearch != null) {
-            System.out.println("Cautare cu succes");
+        if (searchResult != null) {
+
+            System.out.println("Cautare cu succes" + " - " + searchCauciucRequest.make + " " + searchCauciucRequest.type);
+
         } else {
-            System.out.println("Error 404");
+
+            System.out.println("Nici un rezultat");
+
         }
 
     }
+
 }

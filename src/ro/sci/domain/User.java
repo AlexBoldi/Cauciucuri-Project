@@ -9,6 +9,7 @@ public class User {
     public String psasword;
 
     public User(String loginName) {
+
         this.loginName = loginName;
     }
 

@@ -13,8 +13,6 @@ public class Cauciuc {
 
        this.make  = make;
 
-
    }
-
 
 }
